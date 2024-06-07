@@ -12,7 +12,7 @@ const Task = (props: ITaskProps) => {
   return (
     <li>
       <input className="inputTask" onClick={()=>props.onTaskToggle(props.task.id)} type="checkbox" checked={props.task.completed} />{" "}
-      <del>{props.task.title}</del>
+     {props.task.completed ? <del>{props.task.title}</del> : props.task.title}
     </li>
   );
 };

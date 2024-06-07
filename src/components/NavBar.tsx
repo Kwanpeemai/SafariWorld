@@ -1,15 +1,17 @@
+import { Link, Outlet } from "react-router-dom"
 
 const NavBar = () => {
   return (
   <nav>
-    <ul>
+    <ul className="nav-bar">
         <li>
-            <a href="/">Home</a>
+            <Link to="/home">HOME 🏠</Link>
         </li>
         <li>
-            <a href="/login">Login</a>
+            <Link to="/todo">APP 👾</Link>
         </li>
     </ul>
+    <Outlet/>
   </nav>
 )
 }

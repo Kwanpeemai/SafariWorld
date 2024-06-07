@@ -21,21 +21,28 @@ const FormAddTask = () => {
   };
 
   const handleToggle = (id: number) => {
-    alert(id);
+    setTodoList((prevTodoList) =>
+      prevTodoList.map((item) =>
+        item.id == id ? { ...item, completed: !item.completed } : item
+      )
+    );
   };
 
   return (
-    <div>
-      <input
-        ref={ref}
-        type="text"
-        placeholder="please input here"
-        onChange={(e) => setInputTask(e.target.value)}
-        value={inputTask}
-      />
-      <button type="button" onClick={() => handleClick()}>
-        add
-      </button>
+    <div className="container">
+      <div>
+        <h1>Todo App</h1>
+        <input
+          ref={ref}
+          type="text"
+          placeholder="please input here"
+          onChange={(e) => setInputTask(e.target.value)}
+          value={inputTask}
+        />
+        <button type="button" onClick={() => handleClick()}>
+          add
+        </button>
+      </div>
       <TodoList todoList={todoList} onTaskToggle={handleToggle} />
     </div>
   );
