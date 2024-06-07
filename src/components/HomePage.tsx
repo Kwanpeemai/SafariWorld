@@ -4,11 +4,11 @@
 const HomePage = () => {
   return (
     <div className="homepage-container">
-    <h1 style={{fontSize:'5rem'}}>Hello This is HomePage</h1>
+    <h1 style={{fontSize:'2.5rem', lineHeight:0}}>Hello This is</h1>
 
-    
 
-      <h2 style={{fontSize:'3rem'}}>Safari World</h2>
+
+      <h2 style={{fontSize:'5rem', lineHeight:0}}>Safari World</h2>
       <ul style={{fontSize:'1.5rem'}}>
         <li>Peemai</li>
         <li>Tek</li>

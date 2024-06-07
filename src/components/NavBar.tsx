@@ -28,7 +28,7 @@ const NavBar = () => {
             </button>
           ) : (
             <button
-              id="login-btn"
+              id="logout-btn"
               type="button"
               onClick={() => {
                 setFakeLogin(!fakeLogin);
