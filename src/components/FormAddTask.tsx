@@ -10,14 +10,16 @@ const FormAddTask = () => {
   useEffect(() => {
     ref.current && ref.current.focus();
     const fetchData = async () => {
-      try{
-        const res = await axios.get('https://6662d8b362966e20ef0a438e.mockapi.io/todos');
+      try {
+        const res = await axios.get(
+          "https://6662d8b362966e20ef0a438e.mockapi.io/todos"
+        );
         setTodoList(res.data);
       } catch (e) {
-        console.log('Error');
+        console.log("Error");
       }
-    } 
-    fetchData()    
+    };
+    fetchData();
   }, []);
   const handleClick = () => {
     const newTask: ITask = {
@@ -37,8 +39,6 @@ const FormAddTask = () => {
       )
     );
   };
-  
-  
 
   return (
     <div className="container">
@@ -51,9 +51,11 @@ const FormAddTask = () => {
           onChange={(e) => setInputTask(e.target.value)}
           value={inputTask}
         />
-        <button type="button" onClick={() => handleClick()}>
-          add
-        </button>
+        <div className="add-btn-container">
+          <button id="add-btn" type="button" onClick={() => handleClick()}>
+            add
+          </button>
+        </div>
       </div>
       <TodoList todoList={todoList} onTaskToggle={handleToggle} />
     </div>

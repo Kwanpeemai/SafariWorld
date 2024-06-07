@@ -1,37 +1,15 @@
 // import { redirect } from "react-router-dom";
-import { fakeAuthProvider } from "../Auth";
-import { useState } from "react";
+
 
 const HomePage = () => {
-    const [fakeLogin, setFakeLogin] = useState(fakeAuthProvider.isAuthenticated)
   return (
-    <div className="container">
+    <div className="homepage-container">
+    <h1 style={{fontSize:'5rem'}}>Hello This is HomePage</h1>
 
-      {!fakeLogin ? (
-        <button
-          type="button"
-          onClick={() => {
-            setFakeLogin(!fakeLogin)
-            fakeAuthProvider.signin('hello')
-          }}
-        >
-          Login
-        </button>
-      ) : (
-        <button
-          type="button"
-          onClick={() => {
-            setFakeLogin(!fakeLogin)
-            fakeAuthProvider.signout()
-          }}
-        >
-          Logout
-        </button>
-      )}
+    
 
-      <h1>Hello This is HomePage</h1>
-      <h2>Safari World</h2>
-      <ul>
+      <h2 style={{fontSize:'3rem'}}>Safari World</h2>
+      <ul style={{fontSize:'1.5rem'}}>
         <li>Peemai</li>
         <li>Tek</li>
         <li>P</li>
