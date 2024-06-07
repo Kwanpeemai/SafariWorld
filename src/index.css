@@ -27,17 +27,31 @@ input[type=text], select {
 }
 
 #login-btn {
-  width: 100%;
+  width: 150px;
   background-color: lightpink;
   font-weight: bold;
   color: white;
   padding: 14px 20px;
+  margin: 8px 0;
   border: none;
+  margin-left: 20px;
   border-radius: 4px;
   cursor: pointer;
 }
 
 #logout-btn {
+  width: 150px;
+  background-color: lightpink;
+  font-weight: bold;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  margin-left: 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+#logout-btn:hover {
   width: 150px;
   background-color: lightpink;
   font-weight: bold;
