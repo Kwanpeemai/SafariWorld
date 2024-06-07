@@ -42,6 +42,7 @@ button:hover {
 .nav-bar {
   list-style: none;
   font-size: larger;
+
 }
 
 .nav-bar ul {
@@ -49,7 +50,6 @@ button:hover {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
 }
 
 .nav-bar li {
@@ -65,7 +65,8 @@ button:hover {
 }
 
 .nav-bar li a:hover {
-  background-color: #111;
+  background-color: indianred;
+  border-radius: 15px;
 }
 
 .container ul {

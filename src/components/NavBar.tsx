@@ -11,6 +11,7 @@ const NavBar = () => {
             <Link to="/todo">APP 👾</Link>
         </li>
     </ul>
+
     <Outlet/>
   </nav>
 )
