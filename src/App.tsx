@@ -1,22 +1,20 @@
+// import FormAddTask from "./components/FormAddTask"
+import HomePage from "./components/HomePage"
+import NavBar from "./components/NavBar"
+
 
 function App(){
   return (
-    <div className="container">
-      <h1>Todo app</h1>
-      <div>
-      <input id="todolist" type="text" placeholder="please input here"/>
-        <button>add</button>
-      </div>
-     
-        <ul id="list">
-            <li>task 1</li>
-            <li>task 2</li>
-            <li>task 3</li>
-            <li>task 4</li>
-            <li>task 5</li>
-        </ul>   
-    </div> 
+    // <div className="container">
+    //   <h1>Todo app</h1>
+    //   <FormAddTask/>
+    // </div> 
+    <>
+    <NavBar/>
+    <HomePage/>
+    </>
 )
 }
+
 
 export default App
